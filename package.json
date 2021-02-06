@@ -1,0 +1,30 @@
+{
+	"name": "alpha",
+	"version": "0.0.0",
+	"description": "Single-player adventure",
+	"main": "main.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"test": "eslint --fix .",
+		"zip": "zip -r ../alpha.zip font node_modules/videogame sounds sprites themes tiles icon.png index.html main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/diogoeichert/alpha.git"
+	},
+	"author": "Diogo Eichert",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/diogoeichert/alpha/issues"
+	},
+	"homepage": "https://github.com/diogoeichert/alpha#readme",
+	"devDependencies": {
+		"eslint": "^7.19.0",
+		"eslint-config-classic": "^0.1.1"
+	},
+	"dependencies": {
+		"videogame": "^0.1.4"
+	}
+}
