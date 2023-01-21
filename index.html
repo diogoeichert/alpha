@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/png" href="assets/icon.png" />
+
+		<style>
+			#assets {
+				height: 1px;
+				overflow: hidden;
+				visibility: hidden;
+				width: 1px;
+			}
+
+			body {
+				background-color: Black;
+				margin: 0;
+				overflow: hidden;
+				padding: 0;
+			}
+
+			canvas {
+				image-rendering: optimizeSpeed;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<canvas width="640" height="400"></canvas>
+		</div>
+
+		<div id="assets">
+			<img id=",Font" src="assets/font/comma.png" width="4" height="8">
+			<img id="-Font" src="assets/font/hyphen.png" width="6" height="8">
+			<img id=".Font" src="assets/font/period.png" width="3" height="8">
+			<img id="'Font" src="assets/font/apostrophe.png" width="3" height="8">
+			<img id="`Font" src="assets/font/grave.png" width="3" height="8">
+			<img id="0Font" src="assets/font/0.png" width="8" height="8">
+			<img id="1Font" src="assets/font/1.png" width="8" height="8">
+			<img id="2Font" src="assets/font/2.png" width="8" height="8">
+			<img id="3Font" src="assets/font/3.png" width="8" height="8">
+			<img id="4Font" src="assets/font/4.png" width="8" height="8">
+			<img id="5Font" src="assets/font/5.png" width="8" height="8">
+			<img id="6Font" src="assets/font/6.png" width="8" height="8">
+			<img id="7Font" src="assets/font/7.png" width="8" height="8">
+			<img id="8Font" src="assets/font/8.png" width="8" height="8">
+			<img id="9Font" src="assets/font/9.png" width="8" height="8">
+			<img id="aFont" src="assets/font/a.png" width="8" height="8">
+			<img id="bFont" src="assets/font/b.png" width="8" height="8">
+			<img id="cFont" src="assets/font/c.png" width="8" height="8">
+			<img id="dFont" src="assets/font/d.png" width="8" height="8">
+			<img id="eFont" src="assets/font/e.png" width="8" height="8">
+			<img id="fFont" src="assets/font/f.png" width="8" height="8">
+			<img id="gFont" src="assets/font/g.png" width="8" height="8">
+			<img id="hFont" src="assets/font/h.png" width="8" height="8">
+			<img id="iFont" src="assets/font/i.png" width="7" height="8">
+			<img id="jFont" src="assets/font/j.png" width="8" height="8">
+			<img id="kFont" src="assets/font/k.png" width="8" height="8">
+			<img id="lFont" src="assets/font/l.png" width="8" height="8">
+			<img id="mFont" src="assets/font/m.png" width="8" height="8">
+			<img id="nFont" src="assets/font/n.png" width="8" height="8">
+			<img id="oFont" src="assets/font/o.png" width="8" height="8">
+			<img id="pFont" src="assets/font/p.png" width="8" height="8">
+			<img id="qFont" src="assets/font/q.png" width="8" height="8">
+			<img id="rFont" src="assets/font/r.png" width="8" height="8">
+			<img id="sFont" src="assets/font/s.png" width="8" height="8">
+			<img id="tFont" src="assets/font/t.png" width="7" height="8">
+			<img id="uFont" src="assets/font/u.png" width="8" height="8">
+			<img id="vFont" src="assets/font/v.png" width="8" height="8">
+			<img id="wFont" src="assets/font/w.png" width="8" height="8">
+			<img id="xFont" src="assets/font/x.png" width="8" height="8">
+			<img id="yFont" src="assets/font/y.png" width="7" height="8">
+			<img id="zFont" src="assets/font/z.png" width="8" height="8">
+
+			<img id="hand" src="assets/sprites/hand.png" width="16" height="8">
+
+			<img id="player0" src="assets/sprites/player0.png" width="32" height="32">
+			<img id="player1" src="assets/sprites/player1.png" width="32" height="32">
+			<img id="player2" src="assets/sprites/player2.png" width="32" height="32">
+			<img id="playerWalk" src="assets/sprites/playerWalk.png" width="32" height="32">
+
+			<img id="princess0" src="assets/sprites/princess0.png" width="32" height="64">
+			<img id="princess1" src="assets/sprites/princess1.png" width="32" height="64">
+			<img id="princess2" src="assets/sprites/princess2.png" width="32" height="64">
+			<img id="princess3" src="assets/sprites/princess3.png" width="32" height="64">
+
+			<img id="box" src="assets/sprites/box.png" width="32" height="32">
+
+			<img id="cross" src="assets/sprites/cross.png" width="32" height="32">
+
+			<img id="key" src="assets/sprites/key.png" width="32" height="32">
+			<img id="keyIcon" src="assets/sprites/keyIcon.png" width="8" height="8">
+
+			<img id="skull0" src="assets/sprites/skull0.png" width="32" height="32">
+			<img id="skull1" src="assets/sprites/skull1.png" width="32" height="32">
+
+			<img id="ghost0" src="assets/sprites/ghost0.png" width="32" height="32">
+			<img id="ghost1" src="assets/sprites/ghost1.png" width="32" height="32">
+			<img id="ghost2" src="assets/sprites/ghost2.png" width="32" height="32">
+			<img id="ghost3" src="assets/sprites/ghost3.png" width="32" height="32">
+			<img id="ghost4" src="assets/sprites/ghost4.png" width="32" height="32">
+			<img id="ghost5" src="assets/sprites/ghost5.png" width="32" height="32">
+			<img id="ghost6" src="assets/sprites/ghost6.png" width="32" height="32">
+
+			<img id="doorTop0" src="assets/sprites/doorTop0.png" width="32" height="32">
+			<img id="doorTop1" src="assets/sprites/doorTop1.png" width="32" height="32">
+
+			<img id="doorBottom0" src="assets/sprites/doorBottom0.png" width="32" height="32">
+			<img id="doorBottom1" src="assets/sprites/doorBottom1.png" width="32" height="32">
+
+			<img id="00" src="assets/tiles/00.png" width="32" height="32">
+			<img id="01" src="assets/tiles/01.png" width="32" height="32">
+			<img id="10" src="assets/tiles/10.png" width="32" height="32">
+			<img id="11" src="assets/tiles/11.png" width="32" height="32">
+			<img id="12" src="assets/tiles/12.png" width="32" height="32">
+			<img id="13" src="assets/tiles/13.png" width="32" height="32">
+			<img id="14" src="assets/tiles/14.png" width="32" height="32">
+			<img id="15" src="assets/tiles/15.png" width="32" height="32">
+			<img id="16" src="assets/tiles/16.png" width="32" height="32">
+			<img id="17" src="assets/tiles/17.png" width="32" height="32">
+			<img id="18" src="assets/tiles/18.png" width="32" height="32">
+			<img id="19" src="assets/tiles/19.png" width="32" height="32">
+			<img id="20" src="assets/tiles/20.png" width="32" height="32">
+			<img id="21" src="assets/tiles/21.png" width="32" height="32">
+			<img id="22" src="assets/tiles/22.png" width="32" height="32">
+			<img id="23" src="assets/tiles/23.png" width="32" height="32">
+			<img id="24" src="assets/tiles/24.png" width="32" height="32">
+			<img id="25" src="assets/tiles/25.png" width="32" height="32">
+			<img id="26" src="assets/tiles/26.png" width="32" height="32">
+			<img id="27" src="assets/tiles/27.png" width="32" height="32">
+			<img id="28" src="assets/tiles/28.png" width="32" height="32">
+			<img id="29" src="assets/tiles/29.png" width="32" height="32">
+			<img id="30" src="assets/tiles/30.png" width="32" height="32">
+			<img id="31" src="assets/tiles/31.png" width="32" height="32">
+			<img id="32" src="assets/tiles/32.png" width="32" height="32">
+			<img id="33" src="assets/tiles/33.png" width="32" height="32">
+			<img id="34" src="assets/tiles/34.png" width="32" height="32">
+			<img id="35" src="assets/tiles/35.png" width="32" height="32">
+			<img id="36" src="assets/tiles/36.png" width="32" height="32">
+
+			<audio id="crushSound" src="assets/sounds/crush.mp3"></audio>
+			<audio id="deathSound" src="assets/sounds/death.mp3"></audio>
+			<audio id="jumpSound" src="assets/sounds/jump.mp3"></audio>
+			<audio id="keySound" src="assets/sounds/key.mp3"></audio>
+
+			<audio id="theme0" src="assets/themes/theme0.mp3" loop></audio>
+			<audio id="theme1" src="assets/themes/theme1.mp3" loop></audio>
+		</div>
+
+		<script src="node_modules/core2d/core2d.js"></script>
+		<script src="node_modules/core2d/plugin.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
