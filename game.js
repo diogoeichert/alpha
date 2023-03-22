@@ -1185,5 +1185,6 @@ function elementFactory(code) {
 	return new CLASSES[code]();
 }
 
+Core2D.setFrameTime(32);
 Core2D.setName("Alpha");
 Core2D.init(new IntroScene);
