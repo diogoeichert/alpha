@@ -6,6 +6,8 @@ const { Animation, Color, Command, Frame, Rect, Scene, Sprite, Transition, Core2
 const { BaseTile, FontSprite, JumperSprite } = core2d.plugin;
 
 // constants
+const DEFAULT_FRAME_TIME = 32;
+
 const MAPS = [
 	[
 		// F0R0
@@ -889,7 +891,7 @@ class Player extends JumperSprite {
 			this.changeRoom();
 		} else {
 			this.expire();
-			Core2D.setFrameTime();
+			Core2D.setFrameTime(DEFAULT_FRAME_TIME);
 		}
 	}
 
@@ -1185,6 +1187,6 @@ function elementFactory(code) {
 	return new CLASSES[code]();
 }
 
-Core2D.setFrameTime(32);
+Core2D.setFrameTime(DEFAULT_FRAME_TIME);
 Core2D.setName("Alpha");
 Core2D.init(new IntroScene);
